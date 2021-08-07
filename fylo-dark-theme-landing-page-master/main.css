@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@200;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* (intro and email sign up background) */
+    --Dark-intro-Blue: hsl(217, 28%, 15%);
+    /* (main background) */
+    --Dark-main-Blue: hsl(218, 28%, 13%);
+    /* (footer background) */
+    --Dark-footer-Blue: hsl(216, 53%, 9%);
+    /* (testimonials background) */
+    --Dark-testimonialBlue: hsl(219, 30%, 18%);
+    /* (inside call-to-action gradient) */
+    --Cyan: hsl(176, 68%, 64%);
+    /* (inside call-to-action gradient) */
+    --Blue: hsl(198, 60%, 50%);
+    /* (error) */
+    --Light-Red: hsl(0, 100%, 63%)
+}
+
+body {
+    background-color: var(--Dark-intro-Blue);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header img {
+    width: 10%;
+}
+
+header nav {
+    display: inline-block;
+    padding-bottom: 4%;
+    transform: translateY(-25%);
+}
+
+main .discription button {
+    margin-top: 4%;
+    padding: 2% 10% 2% 10%;
+    background-image: linear-gradient(to right, var(--Cyan), var(--Blue));
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 10%;
+}
+
+main .discription button:hover {
+    background-image: linear-gradient(#00EAD3, #00EAD3);
+    height: auto;
+}
+
+main .gridbox1 {
+    background-color: var(--Dark-main-Blue);
+}
+
+main .gridbox2 {
+    background-color: var(--Dark-main-Blue);
+}
+
+main .gridbox3 {
+    background-color: var(--Dark-main-Blue);
+}
+
+main .gridbox3 {
+    padding: 2% 5% 2% 5%;
+}
+
+main .gridbox3 .comments img {
+    width: 10%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+main .gridbox3 .comments p {
+    margin-bottom: 7%;
+}
+
+main .gridbox3 .comments .profile {
+    display: inline;
+    position: absolute;
+    margin-left: 1%;
+}
+
+main .gridbox3 .comments .profile h4 {
+    display: inline-block;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 100%;
+}
+
+main .gridbox3 .comments .profile span {
+    font-weight: normal;
+}
+
+.quotes {
+    background-color: var(--Dark-main-Blue);
+}
+
+main .gridbox3 .comments p {
+    font-size: 95%;
+    word-spacing: 1%;
+}
+
+main .gridbox3 .comments {
+    background-color: var(--Dark-testimonialBlue);
+}
+
+.early_accses {
+    background-color: var(--Dark-main-Blue);
+    position: relative;
+    justify-content: center;
+}
+
+.early_accses .early .submit {
+    padding: 2% 4% 2% 4%;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to left, var(--Cyan), var(--Blue));
+}
+
+.early_accses .early .submit:hover {
+    background-image: linear-gradient(var(--Blue), var(--Blue));
+}
+
+main .footbox {
+    background-color: var(--Dark-footer-Blue);
+}
+
+.footbox .fylo .location {
+    list-style: url(images/icon-location.svg);
+}
+
+.footbox .fylo .phone {
+    list-style: url(images/icon-phone.svg);
+    padding-top: 2%;
+}
+
+.footbox .fylo .e-mail {
+    list-style: url(images/icon-email.svg);
+    padding-top: 2%;
+}
+
+.footbox .lists li {
+    line-height: 2;
+    list-style: none;
+}
+
+.footbox .social .social_media {
+    border: 1px solid white;
+    border-radius: 50%;
+    filter: brightness(0) invert(1);
+}
+
+.footbox .social .social_media:hover {
+    filter: invert(60%) sepia(75%) saturate(497%) hue-rotate(186deg) brightness(99%) contrast(91%);
+}
+
+@media (min-width:769px) {
+    header img {
+        width: 10%;
+    }
+    header nav {
+        margin-left: 75%;
+        padding-bottom: 4%;
+        width: 20%;
+        transform: translateY(-25%);
+    }
+    main .discription button {
+        padding: 2% 10% 2% 10%;
+    }
+    header nav a {
+        margin-right: 7%;
+    }
+    main .illustration {
+        padding-left: 23%;
+    }
+    main .background {
+        background-image: url(/images/bg-curvy-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    main .discription {
+        padding-top: 2%;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+    }
+    main .discription h2 {
+        word-spacing: 10%;
+        font-size: 220%;
+    }
+    main .discription p {
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 5%;
+        margin-bottom: 2%;
+    }
+    main .discription button {
+        margin-bottom: 10%;
+    }
+    main .gridbox1 {
+        padding: 2% 10% 2% 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 5%;
+        column-gap: 5%;
+    }
+    main .gridbox1 .box {
+        padding: 2% 5% 2% 5%;
+        text-align: center;
+    }
+    main .gridbox1 .box img {
+        margin-bottom: 2%;
+    }
+    main .gridbox1 .box p {
+        margin-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: lighter;
+    }
+    main .gridbox2 {
+        padding: 5% 5% 2% 5%;
+        display: flex;
+    }
+    main .gridbox2 .product_img {
+        width: 160vh;
+    }
+    main .gridbox2 .product_img img {
+        width: 100%;
+    }
+    main .gridbox2 .stay_productive {
+        padding-top: 5%;
+        padding-left: 2%;
+        padding-right: 10%;
+    }
+    main .gridbox2 .stay_productive>h2 {
+        margin-bottom: 2%;
+    }
+    main .gridbox2 .stay_productive p {
+        padding-top: 1%;
+        font-weight: lighter;
+        padding-bottom: 2%;
+    }
+    main .gridbox2 a {
+        color: var(--Cyan);
+        text-decoration: underline;
+    }
+    main .gridbox2 .see img {
+        transform: translateY(20%);
+    }
+    main .gridbox3 {
+        padding: 2% 5% 2% 5%;
+        display: flex;
+    }
+    main .gridbox3 .comments {
+        border-radius: 10px;
+        padding: 3% 3% 2% 2%;
+        font-weight: lighter;
+        margin-right: 2%;
+    }
+    .quotes>img {
+        margin-left: 4.5%;
+        margin-bottom: -3%;
+    }
+    main .early_accses {
+        padding: 2% 25% 2% 25%;
+        height: 50vh;
+    }
+    main .early_accses .early {}
+    .early_accses .early {
+        background-color: var(--Dark-intro-Blue);
+        padding: 3% 5% 1% 5%;
+        border-radius: 10px;
+        width: 50%;
+        position: absolute;
+        text-align: center;
+        top: 45%;
+    }
+    .early_accses .early>h3 {
+        margin-bottom: 2%;
+        font-size: 180%;
+        word-spacing: 5%;
+    }
+    .early_accses .early>p {
+        margin-bottom: 4%;
+        padding: 0 3% 0 3%;
+        font-size: 90%;
+        word-spacing: 20%;
+    }
+    .email {
+        padding: 2% 15% 2% 15%;
+        border: none;
+        border-radius: 25px;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+    .footbox {
+        padding: 5% 2% 2% 4%;
+        display: flex;
+    }
+    .footbox .fylo {
+        width: 50%;
+    }
+    main .footbox .fylo img {
+        width: 15%;
+        margin-bottom: 5%;
+    }
+    .footbox .fylo ul {
+        columns: 2;
+        padding-right: 4%;
+    }
+    .footbox .fylo .phone {
+        margin-left: 20%;
+    }
+    .footbox .fylo .e-mail {
+        margin-left: 20%;
+    }
+    .footbox .lists {
+        margin-top: 5%;
+        columns: 2;
+    }
+    .footbox .lists li {
+        padding-right: 7%;
+        width: 8vw;
+    }
+    .footbox .lists li:hover {
+        font-weight: bold;
+    }
+    .footbox .social {
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 10vw;
+        padding-left: 4%;
+    }
+    .footbox .social .social_media {
+        width: 25%;
+        height: auto;
+    }
+}
+
+@media (max-width:769px) {
+    body {
+        width: 100vw;
+        padding: 1%;
+    }
+    header img {
+        margin-left: 2%;
+        width: 20%;
+    }
+    main .discription button {
+        padding: 4% 25% 4% 25%;
+    }
+    header nav {
+        margin-left: 45vw;
+    }
+    header nav a {
+        font-size: 60%;
+    }
+    .discription {
+        text-align: center;
+    }
+    .background {
+        background-image: url(/images/bg-curvy-mobile.svg);
+        background-size: 100% 100%;
+    }
+    main .gridbox1 .box {
+        padding: 2% 5% 2% 5%;
+        text-align: center;
+        font-size: 90%;
+        padding-bottom: 4%;
+        font-weight: lighter;
+    }
+    main .illustration>img {
+        width: 100%;
+    }
+    main .gridbox2 {
+        padding-bottom: 4%;
+    }
+    main .gridbox2 .product_img img {
+        padding-top: 10%;
+        width: 100%;
+    }
+    main .gridbox3 .comments {
+        padding: 1.5% 3% 4% 3%;
+        margin-bottom: 5%;
+        border-radius: 15px;
+    }
+    .see a {
+        padding-left: 2%;
+        color: var(--Cyan);
+    }
+    .stay_productive>h2 {
+        padding-left: 2%;
+        font-size: 110%;
+    }
+    .stay_productive>p {
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 89%;
+    }
+    .quotes>img {
+        width: 10%;
+        margin-top: 10%;
+        margin-left: 4.5%;
+        margin-bottom: -4%;
+    }
+    .early_accses {
+        padding: 2% 4% 4% 4%;
+        background-color: var(--Dark-main-Blue);
+    }
+    .early_accses .early {
+        border-radius: 5px;
+        padding: 0 2% 0 2%;
+        text-align: center;
+        background-color: var(--Dark-intro-Blue);
+    }
+    .footbox {
+        padding-top: 4%;
+        width: 100vw;
+        padding: 2vw;
+    }
+    .footbox .fylo {
+        padding-left: 8vw;
+        margin-bottom: 4%;
+    }
+    .footbox .fylo>img {
+        width: 30%;
+    }
+    .email {
+        padding: 1% 2% 1% 2%;
+        border: none;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+    .submit {
+        margin-bottom: 4%;
+    }
+    .footbox .social {
+        margin: 2vh auto 2vh 35vw;
+    }
+    .footbox .social .social_media {
+        width: 10%;
+    }
+    .footbox .lists li {
+        line-height: 1.5;
+    }
+    main .gridbox2 .see img {
+        transform: translateY(20%);
+    }
+}
